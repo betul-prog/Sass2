@@ -1,0 +1,46 @@
+.item{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    color: rgb(229, 231, 240);
+}
+​
+@for $i from 1 to 5 {
+    .item-#{$i}{
+        @extend .item;
+        background-color: rgb(167, 164, 19);
+        border: 3px solid rgb(238, 241, 9);
+    }
+}
+​
+// .item-1{
+​
+// }
+// .item-2{
+//     margin: 10px;
+//     padding: 5px;
+//     border: 3px solid rgb(238, 241, 9);
+//     font-size: 20px;
+//     background-color: rgb(167, 164, 19);
+//     border-radius: 15px;
+//     color: rgb(229, 231, 240);
+// }.item-3{
+//     margin: 10px;
+//     padding: 5px;
+//     border: 3px solid rgb(238, 241, 9);
+//     font-size: 20px;
+//     background-color: rgb(167, 164, 19);
+//     border-radius: 15px;
+//     color: rgb(229, 231, 240);
+// }.item-4{
+//     margin: 10px;
+//     padding: 5px;
+//     border: 3px solid rgb(238, 241, 9);
+//     font-size: 20px;
+//     background-color: rgb(167, 164, 19);
+//     border-radius: 15px;
+//     color: rgb(229, 231, 240);
+// }
